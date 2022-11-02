@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Cadastro
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+ 
+  <ion-list>
+
+    <ion-item no-lines>
+      <ion-avatar class="center">
+        <img class="center" src="https://www.pngitem.com/pimgs/m/292-2923379_undergraduate-education-logo-for-education-png-transparent-png.png">
+      </ion-avatar>
+      
+    </ion-item>
+
+    
+    <ion-item>
+      <ion-label stacked>Usuário ou E-mail</ion-label>
+      <ion-input type="text" ({ngModel})="usuarioObj.usuario"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label stacked>Senha</ion-label>
+      <ion-input type="password" ({ngModel})="usuarioObj.senha"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>Telefone</ion-label>
+      <ion-input type="password" ({ngModel})="usuarioObj.telefone"></ion-input>
+    </ion-item>
+  
+  </ion-list>
+
+  <button ion-button block (click)="showConfirm()">Cadastro</button>
+
+  <button ion-button block (click)="redirecionarlogin()">Entrar</button>
+
+</ion-content>

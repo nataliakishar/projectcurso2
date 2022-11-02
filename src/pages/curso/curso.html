@@ -3,76 +3,75 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Home</ion-title>
+    <ion-title>Seus cursos</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
   
 
-  <ion-list *ngFor="let item of items">
+  
     <ion-item>
       <ion-thumbnail item-Angular >
         <img src="https://ih1.redbubble.net/image.794225727.9827/st,small,845x845-pad,1000x1000,f8f8f8.u2.jpg">
       </ion-thumbnail>
       <h2>Angular</h2>
       <p>Realizado em 07/5/2022</p>
-      <button ion-button clear item-end>Detalhes</button>
+      
     </ion-item>
-  </ion-list>
 
-<ion-list>
+    <button ion-button block (click)="redirecionardetalhes()">Detalhes</button>
+  
   <ion-item>
     <ion-thumbnail item-CSS3>
       <img src="https://user-images.githubusercontent.com/15041151/93774984-3f426b00-fbf8-11ea-8845-f4666e1d694b.png">
     </ion-thumbnail>
     <h2>CSS3</h2>
     <p>Realizado em 07/6/2022</p>
-    <button ion-button clear item-end>Detalhes</button>
-  </ion-item>
-</ion-list>
+    
+    </ion-item>
 
-<ion-list>
+    <button ion-button block (click)="redirecionardetalhes2()">Detalhes</button>
+
   <ion-item>
     <ion-thumbnail item-HTML>
       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-wSDbC9Pj0_kFXkIW1zuafIkK54ebhQS9u56JaikK08jF9QkSnyQ-pXS4AE0HAY6QVYM&usqp=CAU">
     </ion-thumbnail>
     <h2>HTML </h2>
     <p>Realizado em 07/7/2022</p>
-    <button ion-button clear item-end>Detalhes</button>
-  </ion-item>
-</ion-list>
+    
+    </ion-item>
 
-<ion-list>
+    <button ion-button block (click)="redirecionardetalhes3()">Detalhes</button>
+
   <ion-item>
     <ion-thumbnail item-JavaScript>
       <img src="https://marcas-logos.net/wp-content/uploads/2020/11/JavaScript-logo.png">
     </ion-thumbnail>
     <h2>JavaScript</h2>
     <p>Realizado em 07/8/2022</p>
-    <button ion-button clear item-end>Detalhes</button>
-  </ion-item>
-</ion-list>
-<ion-list>
+    
+    </ion-item>
+
+    <button ion-button block (click)="redirecionardetalhes4()">Detalhes</button>
+
   <ion-item>
     <ion-thumbnail item-Python>
       <img src="https://img1.gratispng.com/20181128/rat/kisspng-python-programming-basics-for-absolute-beginners-michigan-python-user-group-5-jul-2-18-5bfef9217d4820.5192423615434365775132.jpg">
     </ion-thumbnail>
     <h2> Python </h2>
     <p>Realizado em 07/9/2022</p>
-    <button ion-button clear item-end>Detalhes</button>
+    <button ion-button clear item-end>Python</button>
   </ion-item>
-</ion-list>
 
-<ion-list>
 <ion-item>
   <ion-thumbnail item-NodeJs>
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCWgmpMvbVPCT4BV7GYHJHT3JYbyxeobxWGoclgAGWpwwXZWPLfmvDYu1CFnp-GrMYn5Q&usqp=CAU">
   </ion-thumbnail>
   <h2>NodeJs</h2>
   <p>Realizado em 07/10/2022</p>
-  <button ion-button clear item-end>Detalhes</button>
+  <button ion-button clear item-end>NodeJs</button>
 </ion-item>
-</ion-list>
+
 </ion-content>
 
